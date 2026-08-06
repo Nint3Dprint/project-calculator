@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Calculator</title>
+    <script src="first-row-buttons.js"></script>
 </head>
 <body>
     <p>Welcome to the Project Calculator!</p>
     <div id="calculator">
-        <input id="screen" readonly>
-        <button id="+">+</button>
+        <input id="display-box" readonly>
+        <button onclick="addPlus()" id="+">+</button>
+        <button onclick="addMinus()" id="-">-</button>
+
     </div>
 </body>
 </html>

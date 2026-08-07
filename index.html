@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Calculator</title>
-    <script src="first-row-buttons.js"></script>
+    <script src="first-row-buttons.js?v=1.0"></script>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <p>Welcome to the Project Calculator!</p>
+    <h3>Welcome to the Project Calculator!</h3>
     <div id="calculator">
-        <input id="display-box" style="width: 2000px; height: 100;" readonly>
-        <button onclick="addPlus()" id="+">+</button>
-        <button onclick="addMinus()" id="-">-</button>
-
+        <input id="display-box" readonly>
+        <button class="operator"onclick="buttonFunctions('+')">+</button>
+        <button class="operator" onclick="buttonFunctions('-')">-</button>
+        <button class="operator" onclick="buttonFunctions('*')">x</button>
+        <button class="operator" onclick="buttonFunctions('&divide;')">&divide;</button>
+        <button class="operator" onclick="buttonFunctions('1')">1</button>
+        <button class="operator" onclick="buttonFunctions('2')">2</button>
+        <button class="operator" onclick="buttonFunctions('3')">3</button>
+        <button class="operator" onclick="buttonFunctions('4')">4</button>
+        <button class="operator" onclick="buttonFunctions('5')">5</button>
     </div>
 </body>
 </html>

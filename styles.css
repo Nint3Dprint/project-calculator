@@ -49,3 +49,7 @@ body {
     gap: 10px;
     padding: 25px;
 }
+
+button.operator:active, button.number:active, button.bigger:active {
+    background-color: darkgrey;
+} 

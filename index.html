@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Calculator</title>
-    <script src="first-row-buttons.js"></script>
+    <script src="buttons.js"></script>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,24 +14,25 @@
         <div id="buttons">
             <button class="bigger" onclick="plusMinus()">+/-</button>
             <button class="bigger" onclick="buttonFunctions('%')">mod</button>
-            <button class="operator" onclick="buttonFunctions('&pi;')">&pi;</button>
+            <button class="operator" onclick="buttonFunctions('&pi;')">&pi;</button> 
             <button class="bigger" onclick="clearDisplay()">AC</button>
-            <button class="operator" onclick="buttonFunctions('&divide;')">&divide;</button>
-            <button class="operator" onclick="buttonFunctions('&#8730;')">&#8730;</button>
+            <button class="operator" onclick="operator('&divide;')">&divide;</button> <!-- divide button -->
+            <button class="operator" onclick="buttonFunctions('&#8730;')">&#8730;</button> <!-- square root button -->
             <button class="number" onclick="buttonFunctions('1')">1</button>
             <button class="number" onclick="buttonFunctions('2')">2</button>
             <button class="number" onclick="buttonFunctions('3')">3</button>
-            <button class="operator" onclick="buttonFunctions('*')">x</button>
-            <button class="bigger" onclick="buttonFunctions('&sup2')">x&sup2;</button>
+            <button class="operator" onclick="operator('*')">x</button>
+            <button class="bigger" onclick="operator('&sup2')">x&sup2;</button> <!-- ^2 button -->
             <button class="number" onclick="buttonFunctions('4')">4</button>
             <button class="number" onclick="buttonFunctions('5')">5</button>
             <button class="number" onclick="buttonFunctions('6')">6</button>
-            <button class="operator" onclick="buttonFunctions('+')">+</button>
-            <button class="bigger" onclick="buttonFunctions('&sup3')">x&sup3;</button>
+            <button class="operator" onclick="operator('+')">+</button>
+            <button class="bigger" onclick="operator('&sup3')">x&sup3;</button> <!-- ^3 button -->
             <button class="number" onclick="buttonFunctions('7')">7</button>
             <button class="number" onclick="buttonFunctions('8')">8</button>
             <button class="number" onclick="buttonFunctions('9')">9</button>
-            <button class="operator" onclick="buttonFunctions('-')">-</button>
+            <button class="operator" onclick="operator('-')">-</button>
+            <button class="operator" onclick="operator('!')">x!</button>
             <button class="operator" onclick="backspace()">&#9003;</button>
             <button class="number" onclick="buttonFunctions('0')">0</button>
             <button class="operator" onclick="buttonFunctions('.')">.</button>

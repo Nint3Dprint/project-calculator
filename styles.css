@@ -1,7 +1,9 @@
 #calculator {
+    margin: 10vh auto 0 auto;
     max-width: 500px;
     border-radius: 15px;
     overflow: hidden;
+    background-color: black;
 }
 
 #display-box {
@@ -11,7 +13,8 @@
     text-align: left;
     font-family: Comic Sans MS, sans-serif;
     border: none;
-    
+    background-color: #484848;
+    color: white;
 }
 
 button.operator,  button.number {
@@ -22,6 +25,7 @@ button.operator,  button.number {
     text-align: center;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 button.bigger {
@@ -32,6 +36,7 @@ button.bigger {
     text-align: center;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 body {

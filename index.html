@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Calculator</title>
-    <script src="first-row-buttons.js?v=1.0"></script>
+    <script src="first-row-buttons.js"></script>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <h3>Welcome to the Project Calculator!</h3>
     <div id="calculator">
         <input id="display-box" readonly>
-        <button class="mod" onclick="buttonFunctions('%')">mod</button>
-        <button class="operator" onclick="buttonFunctions('&pi;')">&pi;</button>
-        <button class="operator" onclick="buttonFunctions('*')">x</button>
-        <button class="operator" onclick="buttonFunctions('&divide;')">&divide;</button>
-        <button class="operator" onclick="buttonFunctions('1')">1</button>
-        <button class="operator" onclick="buttonFunctions('2')">2</button>
-        <button class="operator" onclick="buttonFunctions('3')">3</button>
-        <button class="operator" onclick="buttonFunctions('4')">4</button>
-        <button class="operator" onclick="buttonFunctions('5')">5</button>
+        <div id="buttons">
+            <button class="bigger" onclick="plusMinus()">+/-</button>
+            <button class="bigger" onclick="buttonFunctions('%')">mod</button>
+            <button class="operator" onclick="buttonFunctions('&pi;')">&pi;</button>
+            <button class="bigger" onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="buttonFunctions('&divide;')">&divide;</button>
+            <button class="operator" onclick="buttonFunctions('&#8730;')">&#8730;</button>
+            <button class="number" onclick="buttonFunctions('1')">1</button>
+            <button class="number" onclick="buttonFunctions('2')">2</button>
+            <button class="number" onclick="buttonFunctions('3')">3</button>
+            <button class="operator" onclick="buttonFunctions('*')">x</button>
+            <button class="number" onclick="buttonFunctions('4')">4</button>
+            <button class="number" onclick="buttonFunctions('5')">5</button>
+            <button class="operator" onclick="equalsShowAnswer()">=</button>
+            <button class="operator" onclick="backspace()">&#9003;</button>
+        </div>
     </div>
 </body>
 </html>

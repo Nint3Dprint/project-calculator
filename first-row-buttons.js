@@ -10,7 +10,7 @@ function clearDisplay() {
 
 function equalsShowAnswer() {
     const myInput = document.getElementById("display-box");
-var result = myInput.value.replace("\u00f7", "/").replace("π", "Math.PI").replace("\u221a\d+", "Math.sqrt()");
+var result = myInput.value.replace("\u00f7", "/").replace("π", "Math.PI").replace(/\u221a(\d+)/g, 'Math.sqrt($1)');
 console.log(result);
     myInput.value = eval(result);
 }

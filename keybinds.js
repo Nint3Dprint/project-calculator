@@ -11,13 +11,13 @@ document.addEventListener('keydown', function(event) {
         operator('\u00f7')
     }
      else if (keyPressed === '-') {
-        Subtract('-')
+        subtract('-')
     }
      else if (keyPressed.toLowerCase() === 'p') {
-        Pi('π')
+        pi('π')
     }
      else if (keyPressed.toLowerCase() === 'v') {
-        operator('\u221a')
+        buttonFunctions('\u221a')
     }
      else if (event.key === 'Backspace') {
         backspace()

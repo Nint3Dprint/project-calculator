@@ -11,7 +11,7 @@ function operator(input) {
     }
 }
 
-function Subtract(input) {
+function subtract(input) {
     const myInput = document.getElementById("display-box");
     var latestInput = myInput.value.slice(-1);
     if (latestInput !== '-' && latestInput !== '+') {
@@ -19,7 +19,7 @@ function Subtract(input) {
     }
 }
 
-function Pi(input) {
+function pi(input) {
     const myInput = document.getElementById("display-box");
     var latestInput = myInput.value.slice(-1);
     if (latestInput !== 'π') {

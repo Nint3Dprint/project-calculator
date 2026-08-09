@@ -1,4 +1,13 @@
 # project-calculator
 
-Project Calculator is…well a project to make a calculator using HTML, CSS, and Javascript. 
-This calculator is going to have the basic features like + - * and /, but it also has a few other features like π √  +/- and mod. 
+Project Calculator is my first coding project with CSS and JavaScript. 
+
+## What each file is for
+
+index.html houses the buttons and screen  
+styles.css makes the UI look better with size, colours, and placement  
+buttons.js give the buttons functions  
+keybinds.js allows you to type with your keyboard instead of pressing the buttons
+
+## Known Bugs
+The +/- button only works if there is only a number on the display. To get around this, use the "-" button to turn numbers negative  

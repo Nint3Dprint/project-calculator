@@ -17,7 +17,7 @@
     color: white;
 }
 
-button.operator,  button.number {
+button.operator,  button.number, button.pi {
     width: 80px;
     height: 80px;
     font-size: 60px;

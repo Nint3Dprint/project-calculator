@@ -40,8 +40,35 @@ console.log(result);
 }
 
 function plusMinus() {
-    const myInput = document.getElementById("display-box");
-    myInput.value = myInput.value * -1;
+  const myInput = document.getElementById("display-box");
+  let str = myInput.value;
+
+  if (!str) return;
+
+  let i = str.length - 1;
+
+  while (i >= 0 && /[\d.]/.test(str[i])) {
+    i--;
+  }
+
+  let start = i + 1;
+
+  // If the minus is a sign, include it with the number
+  if (str[i] === "-" && (i === 0 || /[+\-*/]/.test(str[i - 1]))) {
+    start = i;
+  }
+
+  let lastNumber = str.slice(start);
+
+  if (lastNumber === "" || lastNumber === "-") return;
+
+  if (lastNumber.startsWith("-")) {
+    lastNumber = lastNumber.slice(1);
+  } else {
+    lastNumber = "-" + lastNumber;
+  }
+
+  myInput.value = str.slice(0, start) + lastNumber;
 }
 
 function backspace() {

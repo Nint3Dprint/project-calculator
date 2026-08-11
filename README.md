@@ -10,4 +10,4 @@ buttons.js give the buttons functions
 keybinds.js allows you to type with your keyboard instead of pressing the buttons
 
 ## Known Bugs
-The +/- button only works if there is only a number on the display. To get around this, use the "-" button to turn numbers negative  
+The +/- button only works if there is only a number on the display. To get around this, use the "-" button to turn numbers negative  (FIXED)

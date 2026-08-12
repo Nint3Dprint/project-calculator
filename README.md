@@ -9,3 +9,8 @@ styles.css makes the UI look better with size, colours, and placement
 buttons.js give the buttons functions  
 keybinds.js allows you to type with your keyboard instead of pressing the buttons
 
+## Images
+
+![Calculator](/assets/images/calc.png)
+
+![Calculator](/assets/images/calculator.mov)

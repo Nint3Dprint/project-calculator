@@ -11,6 +11,6 @@ keybinds.js allows you to type with your keyboard instead of pressing the button
 
 ## Images
 
-![Calculator](/assets/images/calc.png)
+<img width="2557" height="1348" alt="calc-img" src="https://github.com/user-attachments/assets/3d29f0a5-ac75-4f3a-b642-d73deee65848" />
 
-![Calculator](/assets/images/calculator.mov)
+https://github.com/user-attachments/assets/60a2d13e-ee06-40da-9006-74a5fa89c0e7
